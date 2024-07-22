@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart and Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main-header">
+        <div class="header-1">
+            <div class="logo">
+                <img src="../../images/food-icon.png">
+                Mr World Wide Restaurant
+            </div>
+
+            <ul class="links">
+                <li><a href="../../index.html" target="_blank" rel="noopener noreferrer">HOME</a></li>
+                <li><a href="./cart.html">MENU N ORDER</a></li>
+                <li><a href="https://www.youtube.com/watch?v=tvkxupwbFLk" target="_blank" rel="noopener noreferrer">REVIEW</a></li>
+                <li><a href="https://www.youtube.com/watch?v=tvkxupwbFLk" target="_blank" rel="noopener noreferrer">ABOUT US</a></li>
+                <li><a href="../feedback/feedback.html" target="_blank" rel="noopener noreferrer">CONTACT</a></li>
+            </ul>
+        </div>
+
+        <div class="header-2">
+            <div class="header-2-info">Menu and Shopping Cart Page</div>
+        </div>
+    </div>
+
+    <div class="content-1">
+        <div class="content-1-header">
+            <div class="title">Food Menu (Tax price not included)</div>
+
+            <div class="icon-cart">
+                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="35px" height="40px" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"/>
+                </svg> 
+
+                <span>0</span>
+            </div>
+        </div>
+
+        <!-- https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes -->
+        <div class="listProduct">
+            <div class="item" data-id="1">
+                <img src="../../images/fish_sauce_noodle.jpg" alt="Image of Fish Sauce Noodle">
+                <h2>Fish Sauce Noodle</h2>
+                <div class="price">$10</div>
+                <p>Text describing the food. Chuong please add details</p>
+                <button class="addCart">Add to Cart</button>
+            </div>
+
+            <div class="item" data-id="2">
+                <img src="../../images/poutine.jpg" alt="Image of Poutine">
+                <h2>Classic Poutine</h2>
+                <div class="price">$20</div>
+                <p>Text describing the food. Chuong please add details</p>
+                <button class="addCart">Add to Cart</button>
+            </div>
+
+            <div class="item" data-id="3">
+                <img src="../../images/broken_rice.jpg" alt="Image of Broken Rice">
+                <h2>Broken Rice</h2>
+                <div class="price">$30</div>
+                <p>Text describing the food. Chuong please add details</p>
+                <button class="addCart">Add to Cart</button>
+            </div>
+
+            <div class="item" data-id="4">
+                <img src="../../images/i_love_pho_king.jpg" alt="Image of Pho">
+                <h2>Raw Beef Pho</h2>
+                <div class="price">$40</div>
+                <p>Text describing the food. Chuong please add details</p>
+                <button class="addCart">Add to Cart</button>
+            </div>
+
+            <div class="item" data-id="5">
+                <img src="../../images/poridge.jpg" alt="Image of Porridge">
+                <h2>Chicken Porridge</h2>
+                <div class="price">$50</div>
+                <p>Text describing the food. Chuong please add details</p>
+                <button class="addCart">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Shopping cart screen -->
+    <div class="cartTab">
+        <h1>Shopping Cart</h1>
+
+        <div class="listCart">
+            <!-- list of shopping cart here. Insert using JS -->
+        </div>
+
+        <div class="btn">
+            <button id="close">CLOSE</button>
+            <button id="checkOut">CHECK OUT</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        Copyright @ Group 21 Group Project
+    </div>    
+
+    <script src="cart.js" type="application/javascript"></script>
+</body>
+</html>
