@@ -294,3 +294,34 @@ button {
 .social-icons a:hover .fa-instagram {
   color: #c13584; 
 }
+
+/* For about us page */
+.team-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.team-member {
+    margin-bottom: 20px;
+    width: 200px;
+    text-align: center;
+}
+
+.team-member .box-info {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1f2937;
+}
+
+.team-member p {
+    font-size: 16px;
+    color: #6d747d;
+    margin: 5px 0 0 0;
+}
+
+
